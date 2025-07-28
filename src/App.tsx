@@ -1,14 +1,12 @@
-import InitialModal from "@/components/modules/InitialModal";
+import React from "react";
+import { Dashboard } from "./components/Dashboard";
 import "./App.css";
-import LandingPage from "@/components/modules/LandingPage";
 
-export function App() {
+function App() {
   return (
-    <>
-      <></>
-      <InitialModal />
-      <LandingPage />
-    </>
+    <div className="App">
+      <Dashboard />
+    </div>
   );
 }
 
