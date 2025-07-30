@@ -1,54 +1,25 @@
-# React + TypeScript + Vite
+# Weekly Productivity Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React Badge](https://img.shields.io/badge/Built%20with-React-61DAFB?style=flat-square&logo=react)
+![TypeScript Badge](https://img.shields.io/badge/Language-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Local Storage Badge](https://img.shields.io/badge/Data%20Storage-LocalStorage-blue?style=flat-square)
 
-Currently, two official plugins are available:
+A simple yet effective web application designed to help you manage your tasks, track your productivity using the Pomodoro Technique, and set achievable weekly goals. Keep your focus, break down your work, and monitor your progress effortlessly.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    "react-x": reactX,
-    "react-dom": reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs["recommended-typescript"].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-});
-```
+* **Task Management:**
+    * **Add Tasks:** Easily add new tasks with comprehensive details.
+    * **Task Details:** For each task, you can set:
+        * **Title:** A concise name for your task.
+        * **Description:** A detailed explanation of what the task involves.
+        * **Number of Pomodoros:** Estimate how many Pomodoro sessions (e.g., 25 minutes of focused work) are required to complete the task.
+        * **Priority:** Assign a priority level (e.g., High, Medium, Low) to help you organize your workload.
+* **Weekly Goal Setting:**
+    * Define your weekly productivity target by setting a specific number of Pomodoros you aim to complete. Track your progress against this goal.
+* **Data Export:**
+    * Export all your tasks, goals, and productivity data as a file (CSV,JSON or ReadME file) for backup.
+* **Data Clearing:**
+    * A straightforward option to clear all your saved data from local storage, allowing you to start fresh.
